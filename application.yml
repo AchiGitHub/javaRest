@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: demorestapi
+server:
+  port: 9090
+---
+spring:
+  profiles: dev
+  application:
+    name: demorestapi
+server:
+  port: 8081
+---
+spring:
+  profiles: prod
+  application:
+    name: demorestapi
+server:
+  port: 9091
